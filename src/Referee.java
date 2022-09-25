@@ -81,12 +81,15 @@ public class Referee
      * Tells the human that it is the computer's turn.
      * Gets a random, legal card from the computer:
      *      •Creates a temp pile
-     *      •Gets a random card from the computer - if its legal, keeps track of this card.
-     *      •Keeps drawing until it runs out of cards.
-     *      •Gives all the cards back to the computer.
-     * If it found a legal move, plays it. (Consoles player if it was the last one.)
-     * Otherwise, draws a card - if its legal, plays it (i.e., sets "topCard" to the selected card); otherwise adds card
-     *    to the computer's pile and repeats drawing until it either finds a legal card or the stock runs out.
+     *      •Gets a random card from the computer - if its legal, keeps track of this card. Otherwise, add to temp pile.
+     *      •Keeps drawing until it runs out of cards or finds a legal card.
+     *      •Gives all the cards in temp pile back to the computer.
+     * If it found a legal move, plays it (i.e., sets "topCard" to the selected card and tells player that card was
+     *    played). Consoles player if it was the last one.
+     * Otherwise, draws a card - if its legal, plays it (i.e., sets "topCard" to the selected card and tells player
+     *    that card was played.)
+     *      •Otherwise adds card to the computer's pile and repeats drawing until it either finds a legal card or
+     *          the stock runs out.
      */
     public void manageComputersTurn()
     {
