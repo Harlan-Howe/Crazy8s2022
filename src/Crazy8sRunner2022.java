@@ -14,6 +14,7 @@ public class Crazy8sRunner2022
 
     public static void runTestsOnPlayers()
     {
+        System.out.println("----------------------------------------- Running test code.");
         // Let's make a temporary deck of cards just for testing out our player classes.
         CardPile practiceDeck = CardPile.makeDeck(CardPile.ACE_LOW);
 
