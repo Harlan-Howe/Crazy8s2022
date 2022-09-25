@@ -68,7 +68,7 @@ public class Referee
     {
         // -----------------------------------------
         // TODO: You write this!
-
+        System.out.println("Managing Human's turn. (not yet written.)"); // remove this when it is no longer accurate.
 
         // -----------------------------------------
     }
@@ -88,7 +88,7 @@ public class Referee
     {
         // -----------------------------------------
         // TODO: You write this!
-
+        System.out.println("Managing Computer's turn. (not yet written.)"); // remove this when it's no longer accurate.
 
         // -----------------------------------------
     }
