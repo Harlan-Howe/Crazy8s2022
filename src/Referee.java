@@ -122,7 +122,8 @@ public class Referee
     {
         // -----------------------------------------
         // TODO: You write this!
-
+        // hint: as with some other methods we've seen, make a temporary pile, and transfer each card to that pile as
+        //       you check them. Then, when done, transfer them all back to the player.
 
         // -----------------------------------------
         return false; // temp code.
