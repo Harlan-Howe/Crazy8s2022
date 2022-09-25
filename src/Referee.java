@@ -63,10 +63,13 @@ public class Referee
      *
      * If so, play the card: set "topCard" to the selected card. If playing an eight, ask the player for a suit and make
      * the top card be a new 8 Card of that suit. (This is something you can't do in real life.)
+     * If not, scold the player and put the drawn card back in the player's hand.
      *
      * If the card played was the player's last, congratulate him or her.
      *
      * Repeat until either the player has played a card OR the player can't play a card and the stock is empty.
+     *
+     * If the card played was the player's last, congratulate him or her.
      */
     public void manageHumansTurn()
     {
