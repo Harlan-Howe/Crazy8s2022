@@ -96,11 +96,29 @@ public class HumanPlayer
     public Card askForCard()
     {
         showNumberedListOfCards();
-        int choice;
+        int choice = getChoiceNumber();
+        // "choice" is now the number on the list that the user requested, or a number outside of the range of the list.
+
+        // -----------------------------------------
+        // TODO: You write the rest of this!
+        //     if the number is in range, remove the corresponding card from myCards and return it.
+        //     otherwise, return null.
+
+
+        // -----------------------------------------
+        return null; // temp code.
+    }
+
+    /**
+     * requests an integer from the user and keeps asking until it gets one.
+     * @return the integer selected by the user.
+     */
+    public int getChoiceNumber()
+    {
+        // I've written this for you.
+        int choice = 0;
         while(true)
         {
-
-
             System.out.println("Which number card do you want to play, or 0 to draw?");
             try // we're about to try something that might not work.
             {
@@ -111,19 +129,10 @@ public class HumanPlayer
             {
                 System.out.println("That was not a numerical answer.");
                 keyboard.nextLine(); // clears any extra spaces and the carriage return so we are ready to receive
-                                        // another number.
+                // another number.
             }
-
         }
-        // -----------------------------------------
-        // "choice" is now the number on the list that the user requested, or a number outside of the range of the list.
-        // TODO: You write the rest of this!
-        //     if the number is in range, remove the corresponding card from myCards and return it.
-        //     otherwise, return null.
-
-
-        // -----------------------------------------
-        return null; // temp code.
+        return choice;
     }
 
 
