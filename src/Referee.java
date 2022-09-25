@@ -35,8 +35,12 @@ public class Referee
         topCard = stock.dealCard();
 
         itsHumansTurn = Math.random()>0.5;
+        if (itsHumansTurn)
+            System.out.println("Human won the coin toss and goes first.");
+        else
+            System.out.println("Human lost the coin toss and goes second.");
 
-        while(human.getNumCards()>0 && computer.getNumCards() > 0)
+        while(gameIsStillPlaying())
         {
             if (itsHumansTurn)
             {
@@ -122,6 +126,19 @@ public class Referee
 
         // -----------------------------------------
         return false; // temp code.
+    }
+
+    /**
+     * determines whether the game should continue playing.
+     * @return whether both players still have cards to play.
+     */
+    public boolean gameIsStillPlaying()
+    {
+        //------------------------------------------
+        // TODO: You write this!
+
+        return true; // temp code.
+        // -----------------------------------------
     }
 
 }
